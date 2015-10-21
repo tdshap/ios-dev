@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorSlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="UQn-ce-IrE">
+                                <rect key="frame" x="0.0" y="61" width="320" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.084968373145658999" green="0.5606849747474747" blue="0.19113070298676335" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="epw-S9-dc7">
+                                <rect key="frame" x="32" y="242" width="261" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.72940178888097118" green="0.7659011994949495" blue="0.15183978526430164" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onHueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6Mj-tc-ZEF"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="MkB-G5-Gh8">
+                                <rect key="frame" x="32" y="333" width="261" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.7659011994949495" green="0.21053134713010999" blue="0.10252700912129638" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onBrightnessChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="E4n-6q-gsW"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="AKT-QV-uwf">
+                                <rect key="frame" x="32" y="415" width="261" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25853529822201443" green="0.47051275690091027" blue="0.7659011994949495" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onSaturationChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="TWO-3H-OMC"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturation: 0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="01C-dR-cmn">
+                                <rect key="frame" x="21" y="303" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brightness: 0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sPf-qK-dQf">
+                                <rect key="frame" x="21" y="385" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hue: 0.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0qz-Yl-dRh">
+                                <rect key="frame" x="20" y="219" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BPM-Yk-imj">
+                                <rect key="frame" x="242" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MIX">
+                                    <color key="titleColor" red="0.080521654309357774" green="0.83487520614538502" blue="0.90250157828282829" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" id="wsl-bS-DyP">
+                                <rect key="frame" x="34" y="458" width="104" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vaV-mQ-Kgi">
+                                <rect key="frame" x="242" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MIX">
+                                    <color key="titleColor" red="0.080521654309999996" green="0.83487520609999999" blue="0.9025015783" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onMix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFE-fG-Wdl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xbh-sO-NUg">
+                                <rect key="frame" x="239" y="458" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" red="0.66234485214264938" green="0.029170874323384225" blue="0.7659011994949495" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onColorSaved:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJc-L7-p0c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="brightnessLabel" destination="01C-dR-cmn" id="wKb-Zs-wEV"/>
+                        <outlet property="brightnessSlider" destination="AKT-QV-uwf" id="uPb-KC-VqF"/>
+                        <outlet property="colorView" destination="UQn-ce-IrE" id="lVi-Z0-hXW"/>
+                        <outlet property="hueLabel" destination="0qz-Yl-dRh" id="rCG-nf-3AZ"/>
+                        <outlet property="hueSlider" destination="epw-S9-dc7" id="a79-NX-i6P"/>
+                        <outlet property="saturationLabel" destination="sPf-qK-dQf" id="K2P-wv-tWh"/>
+                        <outlet property="saturationSlider" destination="MkB-G5-Gh8" id="n4S-Bo-Kc5"/>
+                        <outlet property="savedColor" destination="wsl-bS-DyP" id="NmJ-pz-UMN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="335"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.35361153663101019" green="1" blue="0.42077392169291061" alpha="1" colorSpace="calibratedRGB"/>
+</document>
