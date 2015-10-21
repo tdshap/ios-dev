@@ -125,27 +125,3 @@ var xAxis = Line(startPoint:origin, endPoint:otherPoint)
 // TODO: Add a method to Line that computes the Line's length.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

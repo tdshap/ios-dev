@@ -42,18 +42,3 @@ convertLbsToKg(125)
 // PRACTICE: Write another that converts Celsius to Fahrenheit.
 // PRACTICE: Prove that you've written them correctly by calling one with the result of the other.
 
-func celToFar(temp:Double) ->Double {
-    var far = (temp * 9/5) + 32
-    return far
-    
-}
-
-func farToCel(temp:Double) ->Double {
-    var cel = (temp - 32) * 5/9
-    return cel
-}
-
-
-var returnOne = celToFar(32)
-farToCel(returnOne)
-
