@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80D9D8C41BD7408E000E49CD /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9D8C31BD7408E000E49CD /* MatrixViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		80D9D8C61BD75C0D000E49CD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9D8C51BD75C0D000E49CD /* File.swift */; settings = {ASSET_TAGS = (); }; };
+		80D9D8C41BD7408E000E49CD /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D9D8C31BD7408E000E49CD /* MatrixViewController.swift */; };
 		80FBEA3D1BD43A71000A9181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA3C1BD43A71000A9181 /* AppDelegate.swift */; };
 		80FBEA3F1BD43A71000A9181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA3E1BD43A71000A9181 /* ViewController.swift */; };
 		80FBEA421BD43A71000A9181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA401BD43A71000A9181 /* Main.storyboard */; };
@@ -16,12 +15,12 @@
 		80FBEA471BD43A71000A9181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA451BD43A71000A9181 /* LaunchScreen.storyboard */; };
 		80FBEA521BD43A72000A9181 /* taskAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA511BD43A72000A9181 /* taskAppTests.swift */; };
 		80FBEA5D1BD43A72000A9181 /* taskAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA5C1BD43A72000A9181 /* taskAppUITests.swift */; };
-		80FBEA6B1BD43AC3000A9181 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA6A1BD43AC3000A9181 /* TaskViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		80FBEA6E1BD43C5E000A9181 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA6C1BD43C5E000A9181 /* checkmark.png */; settings = {ASSET_TAGS = (); }; };
-		80FBEA6F1BD43C5E000A9181 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA6D1BD43C5E000A9181 /* x.png */; settings = {ASSET_TAGS = (); }; };
-		80FBEA721BD46F1E000A9181 /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA701BD46F1E000A9181 /* complete.png */; settings = {ASSET_TAGS = (); }; };
-		80FBEA731BD46F1E000A9181 /* incomplete.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA711BD46F1E000A9181 /* incomplete.png */; settings = {ASSET_TAGS = (); }; };
-		80FBEA751BD47336000A9181 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA741BD47336000A9181 /* TaskModel.swift */; settings = {ASSET_TAGS = (); }; };
+		80FBEA6B1BD43AC3000A9181 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA6A1BD43AC3000A9181 /* TaskViewController.swift */; };
+		80FBEA6E1BD43C5E000A9181 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA6C1BD43C5E000A9181 /* checkmark.png */; };
+		80FBEA6F1BD43C5E000A9181 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA6D1BD43C5E000A9181 /* x.png */; };
+		80FBEA721BD46F1E000A9181 /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA701BD46F1E000A9181 /* complete.png */; };
+		80FBEA731BD46F1E000A9181 /* incomplete.png in Resources */ = {isa = PBXBuildFile; fileRef = 80FBEA711BD46F1E000A9181 /* incomplete.png */; };
+		80FBEA751BD47336000A9181 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FBEA741BD47336000A9181 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		80D9D8C31BD7408E000E49CD /* MatrixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
-		80D9D8C51BD75C0D000E49CD /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../../Desktop/File.swift; sourceTree = "<group>"; };
 		80FBEA391BD43A71000A9181 /* taskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FBEA3C1BD43A71000A9181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FBEA3E1BD43A71000A9181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		80FBEA301BD43A71000A9181 = {
 			isa = PBXGroup;
 			children = (
-				80D9D8C51BD75C0D000E49CD /* File.swift */,
 				80FBEA3B1BD43A71000A9181 /* taskApp */,
 				80FBEA501BD43A72000A9181 /* taskAppTests */,
 				80FBEA5B1BD43A72000A9181 /* taskAppUITests */,
@@ -284,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80FBEA3F1BD43A71000A9181 /* ViewController.swift in Sources */,
-				80D9D8C61BD75C0D000E49CD /* File.swift in Sources */,
 				80FBEA3D1BD43A71000A9181 /* AppDelegate.swift in Sources */,
 				80FBEA751BD47336000A9181 /* TaskModel.swift in Sources */,
 				80FBEA6B1BD43AC3000A9181 /* TaskViewController.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TaaskViewController: UIViewController {
+class TaskViewController: UIViewController {
 //    Class vars
     var currentTask :TaskModel?
 
