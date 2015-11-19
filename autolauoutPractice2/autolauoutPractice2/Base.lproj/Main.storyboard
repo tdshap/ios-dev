@@ -122,15 +122,25 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="3hz-It-Eva"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-kt-TsF">
+                                <rect key="frame" x="236" y="498" width="128" height="30"/>
+                                <state key="normal" title="Go to sidebar view"/>
+                                <connections>
+                                    <segue destination="Xr3-Ke-CLa" kind="show" id="iKZ-ZU-4xn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="eot-9z-XxG" firstAttribute="leading" secondItem="Cu2-zk-dHs" secondAttribute="leadingMargin" constant="100" id="0Ag-OG-W3L"/>
                             <constraint firstItem="eot-9z-XxG" firstAttribute="top" secondItem="dIE-pO-SHS" secondAttribute="bottom" constant="50" id="O1C-HA-hkS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eot-9z-XxG" secondAttribute="trailing" constant="100" id="PWs-0h-I99"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ck0-kt-TsF" secondAttribute="trailing" constant="20" id="R6E-KX-bw6"/>
+                            <constraint firstItem="Ck0-kt-TsF" firstAttribute="top" secondItem="eot-9z-XxG" secondAttribute="bottom" constant="10" id="ejy-2m-hu2"/>
                             <constraint firstItem="dIE-pO-SHS" firstAttribute="leading" secondItem="Cu2-zk-dHs" secondAttribute="leadingMargin" constant="30" id="jKX-vg-9tp"/>
                             <constraint firstItem="dIE-pO-SHS" firstAttribute="top" secondItem="Cu2-zk-dHs" secondAttribute="topMargin" constant="100" id="m4Z-8U-vkb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dIE-pO-SHS" secondAttribute="trailing" constant="30" id="pcV-IY-EVE"/>
+                            <constraint firstItem="Ck0-kt-TsF" firstAttribute="leading" secondItem="Cu2-zk-dHs" secondAttribute="leadingMargin" constant="20" id="tpl-nH-gQm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h62-RL-9O0"/>
@@ -138,6 +148,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fdy-gm-neR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="532" y="354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v4K-dY-EIr">
+            <objects>
+                <viewController id="Xr3-Ke-CLa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzg-K9-t6E"/>
+                        <viewControllerLayoutGuide type="bottom" id="QFi-gR-RDt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y3a-HA-ofV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ILD-td-PeB">
+                                <rect key="frame" x="0.0" y="64" width="600" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="602-BF-NIB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="203" height="400"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ILD-td-PeB" firstAttribute="leading" secondItem="y3a-HA-ofV" secondAttribute="leadingMargin" constant="-20" id="9cH-G9-Zwu">
+                                <variation key="heightClass=compact" constant="180"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="ILD-td-PeB" secondAttribute="trailing" constant="-20" id="Asc-u8-TEm"/>
+                            <constraint firstItem="QFi-gR-RDt" firstAttribute="top" secondItem="ILD-td-PeB" secondAttribute="bottom" constant="-6" id="G35-y9-0BY"/>
+                            <constraint firstItem="ILD-td-PeB" firstAttribute="top" secondItem="wzg-K9-t6E" secondAttribute="bottom" id="HSM-lA-rz0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="602-BF-NIB"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="602-BF-NIB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8h-pE-cNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="1140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YFV-Z7-XRa">
